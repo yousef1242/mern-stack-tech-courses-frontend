@@ -6,95 +6,95 @@ export function middleware(req) {
     req.cookies.get("userInfoDataWhenLoginUser") && JSON.parse(verify.value);
   let url = req.url;
 
-  if (!verify && url.includes("http://localhost:3000/profile/setting")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/profile/setting")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (!verify && url.includes("http://localhost:3000/profile/my-courses")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/profile/my-courses")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (!verify && url.includes("http://localhost:3000/profile/favourite")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/profile/favourite")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (!verify && url.includes("http://localhost:3000/dashboard")) {
-    return NextResponse.redirect("http://localhost:3000");
-  }
-
-  if (
-    userInfo?.isAdmin === false &&
-    url.includes("http://localhost:3000/dashboard")
-  ) {
-    return NextResponse.redirect("http://localhost:3000");
-  }
-
-  if (!verify && url.includes("http://localhost:3000/dashboard/users")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("http://localhost:3000/dashboard/users")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (!verify && url.includes("http://localhost:3000/dashboard/courses")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard/users")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("http://localhost:3000/dashboard/courses")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/users")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (!verify && url.includes("http://localhost:3000/dashboard/categories")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("http://localhost:3000/dashboard/categories")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  }
+
+  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  }
+
+  if (
+    userInfo?.isAdmin === false &&
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories")
+  ) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     !verify &&
-    url.includes("http://localhost:3000/dashboard/courses/add-course")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses/add-course")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("http://localhost:3000/dashboard/courses/add-course")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses/add-course")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     !verify &&
-    url.includes("http://localhost:3000/dashboard/categories/add-category")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories/add-category")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("http://localhost:3000/dashboard/categories/add-category")
+    url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories/add-category")
   ) {
-    return NextResponse.redirect("http://localhost:3000");
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (verify && url.includes("http://localhost:3000/login")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (verify && url.includes("https://tech-courses-frontend.vercel.app/login")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 
-  if (verify && url.includes("http://localhost:3000/signup")) {
-    return NextResponse.redirect("http://localhost:3000");
+  if (verify && url.includes("https://tech-courses-frontend.vercel.app/signup")) {
+    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
   }
 }

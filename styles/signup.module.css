@@ -1,0 +1,60 @@
+.signupPage .container {
+  height: 100%;
+}
+.signupPage {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+}
+.signupPage .mainDiv {
+  width: 800px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #efefef;
+}
+.signupPage .imageLogin {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.signupPage .formGroup {
+  margin-bottom: 20px;
+}
+.signupPage .formGroup label {
+  display: block;
+  width: 100%;
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.signupPage .formGroup input {
+  width: 100%;
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px #efefef;
+  border: 0;
+  outline: none;
+}
+.signupPage .formGroup input:focus {
+  border: 1px solid var(--orange-color);
+  outline: none;
+}
+.signupPage .formSubmitBtn {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+  background-color: var(--orange-color);
+  border-radius: 3px;
+  transition: 0.3s;
+  border: 0;
+}
+.signupPage .formSubmitBtn:hover {
+  background-color: var(--low-orange-color);
+}

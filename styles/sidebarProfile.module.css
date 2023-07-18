@@ -1,0 +1,44 @@
+.SidebarProfile{
+    height: 100vh;
+    padding: 100px 20px 0 20px;
+    background: linear-gradient(to right, white, #F5FAFE);
+}
+.SidebarProfile ul {
+    padding: 0;
+}
+.SidebarProfile ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: var(--orange-color);
+    border-radius: 5px;
+    transition: .3s;
+}
+.SidebarProfile ul li svg{
+    margin-right: 10px;
+}
+.SidebarProfile ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.SidebarProfile ul li:hover{
+    background-color: #F5FAFE;
+    box-shadow: 0px 3px 10px var(--gray-color);
+}
+@media screen and (max-width:767px) {
+    .SidebarProfile{
+        display: flex;
+        justify-content: center;
+        padding: 100px 0 0 0;
+    }
+    .SidebarProfile li{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .SidebarProfile ul li svg{
+        margin-right: -7px;
+    }
+}

@@ -1,0 +1,51 @@
+.rightDiv {
+  overflow: scroll;
+  background-color: #fff;
+  height: 100vh;
+  padding: 100px 0 50px 0;
+}
+.rightDiv::-webkit-scrollbar {
+  display: none;
+}
+.rightDiv .addCourseLink {
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 3px;
+  color: #fff;
+  background-color: var(--orange-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.rightDiv .addCourseLink:hover {
+  background-color: var(--low-orange-color);
+}
+.rightDiv .cardDiv {
+  border: 0;
+  padding: 20px;
+  box-shadow: 0 0 10px #efefef;
+}
+.rightDiv .actionCourse {
+  text-decoration: none;
+  padding: 7px;
+  background-color: var(--orange-color);
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  width: fit-content;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.3s;
+}
+.rightDiv .actionCourse:hover {
+  background-color: var(--low-orange-color);
+}
+.rightDiv .searchInput{
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #efefef;
+    padding: 10px;
+}

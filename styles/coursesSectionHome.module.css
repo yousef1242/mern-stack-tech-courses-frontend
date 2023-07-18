@@ -1,0 +1,41 @@
+.coursesSectionHome{
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+.coursesSectionHome .overlay{
+    position: absolute;
+    width: 149px;
+    height: 150px;
+    top: 52px;
+    right: -55px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+}
+.coursesSectionHome h1{
+    color: var(--text-color);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.coursesSectionHome .showMore{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+.coursesSectionHome .showMore a{
+    width: fit-content;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    transition: .3s;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.coursesSectionHome .showMore a:hover{
+    background-color: var(--low-orange-color);
+}

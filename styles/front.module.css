@@ -1,0 +1,47 @@
+.frontHome{
+    padding: 100px 0;
+    position: relative;
+}
+.frontHome .overlay{
+    position: absolute;
+    width: 149px;
+    height: 150px;
+    top: 52px;
+    left: -55px;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+}
+.frontHome .waves{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+.frontHome .title span{
+    color: var(--orange-color);
+}
+.frontHome .title{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+.frontHome .tryNow{
+    padding: 10px;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border-radius: 3px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s;
+}
+.frontHome .tryNow:hover{
+    background-color: var(--low-orange-color);
+}
+.frontHome .studyImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

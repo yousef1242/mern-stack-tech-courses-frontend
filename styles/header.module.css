@@ -1,0 +1,105 @@
+.header {
+  position: fixed!important;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 0px 10px #efefef;
+  background: #F5FAFE;
+  padding: 30px 0;
+  z-index: 999;
+}
+.header .brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-right: 40px;
+}
+.header .brandSmall {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-weight: bold;
+  border-radius: 50%;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.header .links {
+  font-weight: 700;
+  transition: 0.3s;
+  color: var(--text-color);
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.header .login {
+  padding: 10px 20px;
+  border-left: 1px solid var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 18px;
+  transition: .3s;
+}
+.header .signup {
+  padding: 10px 20px;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+}
+.header .links:hover, .header .login:hover {
+  color: var(--orange-color);
+}
+.header .navbarToggler {
+  border: 0px;
+}
+.header .navbarToggler:focus {
+  box-shadow: none;
+}
+.header .profileLink{
+  color: var(--text-color);
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.logoutBtn{
+  color: var(--text-color);
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 17px;
+}
+@media (max-width: 992px) {
+  .header .links {
+    margin-bottom: 20px;
+  }
+  .header .links:first-child {
+    margin-top: 20px;
+  }
+  .header .login {
+    padding: 0;
+    border-left: 0px;
+    margin-bottom: 20px;
+  }
+  .header .signup {
+    padding: 0;
+    border-left: 0px;
+    margin-bottom: 20px;
+    background: none;
+    color: var(--text-color);
+  }
+}
+@media (max-width: 506px) {
+  .header .brand {
+    display: none;
+  }
+}

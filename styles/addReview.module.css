@@ -1,0 +1,38 @@
+.addReview {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #0000000f;
+  left: 0;
+}
+.addReview .container {
+  height: 100%;
+}
+.addReview .mainDiv {
+  width: 800px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+}
+.addReview .formGroup {
+  margin-bottom: 20px;
+}
+.addReview .formSubmitBtn {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 20px;
+  background-color: var(--orange-color);
+  border-radius: 3px;
+  transition: 0.3s;
+  border: 0;
+}
+.addReview .formSubmitBtn:hover {
+  background-color: var(--low-orange-color);
+}

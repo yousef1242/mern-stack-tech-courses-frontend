@@ -1,0 +1,48 @@
+.rightDiv{
+    padding: 100px 0 0 0;
+    overflow: scroll;
+    height: 100vh;
+    background-color: #fff;
+}
+.rightDiv::-webkit-scrollbar{
+    display: none;
+}
+.rightDiv img{
+    height: 300px;
+    object-fit: cover;
+    width: 400%;
+}
+.rightDiv .coursesDiv div, .rightDiv .lessonsDiv div, .rightDiv .userssDiv div{
+    background-color: #fff;
+    box-shadow: 0 0 10px #efefef;
+    height: 200px;
+    width: 200px;
+    padding: 30px;
+}
+.rightDiv .cardDiv{
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 10px #efefef;
+    padding: 30px;
+}
+.rightDiv .cardDiv .SpanIconCard{
+    width: 40px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #efefef;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.rightDiv .cardDiv .spanNumberCard{
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.rightDiv .cardDiv .spanTotalCard{
+    color: #777;
+    font-weight: 600;
+}

@@ -1,0 +1,60 @@
+.loginPage .container {
+  height: 100%;
+}
+.loginPage {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+}
+.loginPage .mainDiv {
+  width: 800px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #efefef;
+}
+.loginPage .imageLogin {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.loginPage .formGroup{
+    margin-bottom: 20px;
+}
+.loginPage .formGroup label{
+    display: block;
+    width: 100%;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.loginPage .formGroup input{
+    width: 100%;
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px #efefef;
+    border: 0;
+    outline: none;
+}
+.loginPage .formGroup input:focus{
+    border:1px solid var(--orange-color);
+    outline: none;
+}
+.loginPage .formSubmitBtn{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: var(--orange-color);
+    border-radius: 3px;
+    transition: .3s;
+    border: 0;
+}
+.loginPage .formSubmitBtn:hover{
+    background-color: var(--low-orange-color);
+}

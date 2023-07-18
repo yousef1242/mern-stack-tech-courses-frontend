@@ -1,0 +1,58 @@
+.divRight{
+    padding: 150px 0 0 0;
+    background-color: #fff;
+    overflow: scroll;
+    height: 100vh;
+}
+.divRight::-webkit-scrollbar{
+    display: none;
+}
+.divRight .mainCard{
+    margin-bottom: 100px;
+}
+.divRight .cardDiv{
+    box-shadow: 0px 0px 10px #efefef;
+    border: 0px;
+    outline: none;
+    padding: 0px 20px 20px 20px;
+    height: 100%;
+}
+.divRight .cardDiv .imageDiv{
+    text-align: center;
+    height: 150px;
+}
+.divRight .cardDiv .imageDiv img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    transform: translateY(-56px);
+}
+.divRight .cardDiv .title{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.divRight .cardDiv .iconVideo{
+    color: var(--orange-color);
+}
+.divRight .cardDiv .lesson{
+    font-size: 16px;
+}
+.divRight .cardDiv .toCourse{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid var(--gray-color);
+    padding: 10px 0;
+    margin-top: 15px;
+}
+.divRight .cardDiv .toCourse a{
+    color: var(--text-color);
+    font-size: 25px;
+}
+.divRight .cardDiv .toCourse span{
+    font-size: 25px;
+    cursor: pointer;
+}

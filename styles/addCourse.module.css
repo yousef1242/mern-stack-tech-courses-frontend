@@ -1,0 +1,58 @@
+.rightDiv {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #fff;
+  padding: 100px 0 50px 0;
+}
+.rightDiv::-webkit-scrollbar {
+  display: none;
+}
+.rightDiv .formDiv {
+  background-color: #fff;
+  box-shadow: 0 0 10px #efefef;
+  width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+}
+.rightDiv .formDiv form label {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.rightDiv .formDiv form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #efefef;
+  border: 0;
+  outline: 0;
+}
+.rightDiv .formDiv form input:focus,
+.rightDiv .formDiv form .selectCategory:focus {
+  border: 1px solid var(--orange-color);
+}
+.rightDiv .formDiv form .selectCategory {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px #efefef;
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+}
+.rightDiv .formDiv form .addCourseBtn {
+  background-color: var(--orange-color);
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.rightDiv .formDiv form .addCourseBtn:hover {
+  background-color: var(--low-orange-color);
+}

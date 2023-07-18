@@ -1,0 +1,75 @@
+.rightDiv{
+    background-color: #fff;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.rightDiv::-webkit-scrollbar{
+    display: none;
+}
+.mainDiv{
+    box-shadow: 0px 0px 10px #efefef;
+    background-color: #ffff;
+    padding: 20px;
+    width: 100%;
+}
+.mainDiv .userImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.mainDiv .labelFile{
+    position: absolute;
+    top: 68px;
+    right: 0px;
+    background: var(--orange-color);
+    color: #fff;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.mainDiv .imageDiv{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.mainDiv .uploadBtn{
+    position: absolute;
+    top: 81px;
+    right: -54px;
+    background: var(--orange-color);
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+}
+.mainDiv .editInput{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #efefef;
+    margin-bottom: 15px;
+}
+.editBtn{
+    background: var(--orange-color);
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    padding: 5px;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 600;
+}

@@ -1,0 +1,94 @@
+.coursesPage{
+    padding: 100px 0 40px 0;
+    position: relative;
+    position: relative;
+}
+.coursesPage .header{
+    margin-bottom: 100px;
+}
+.coursesPage .headerTitle{
+    color: var(--text-color);
+    font-weight: bold;
+}
+.coursesPage .reset{
+    padding: 7px;
+    border: 0;
+    outline: 0;
+    color: var(--white-color);
+    font-weight: 600;
+    background-color: var(--orange-color);
+    margin-left: 10px;
+    transition: .3s;
+}
+.coursesPage .reset:hover{
+    background-color: var(--low-orange-color);
+}
+.coursesPage .input{
+    padding: 7px;
+    border: 0;
+    color: var(--text-color);
+    outline: 0;
+    border-radius: 3px;
+    background-color: var(--white-color);
+    box-shadow: 0px 3px 10px var(--gray-color);
+}
+.coursesPage .noCourses{
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+}
+.coursesPage .input:focus , .coursesPage .select:focus{
+    box-shadow: 0px 3px 10px var(--gray-color);
+}
+.coursesPage .select{
+    margin-left: 10px;
+    box-shadow: 0px 3px 10px var(--gray-color);
+    padding: 7px;
+    border: 0;
+    outline: 0;
+}
+.mainCard{
+    margin-bottom: 100px;
+}
+.cardDiv{
+    box-shadow: 0px 0px 10px #efefef;
+    border: 0px;
+    outline: none;
+    padding: 0px 20px 20px 20px;
+    height: 100%;
+}
+.cardDiv .imageDiv{
+    text-align: center;
+    height: 150px;
+}
+.coursesPage .imageDiv img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+    transform: translateY(-56px);
+}
+.coursesPage .title{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+.coursesPage .iconVideo{
+    color: var(--orange-color);
+}
+.coursesPage .lesson{
+    font-size: 16px;
+}
+.coursesPage .toCourse{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    border-top: 1px solid var(--gray-color);
+    padding: 10px 0;
+    margin-top: 15px;
+}
+.coursesPage .toCourse a{
+    color: var(--text-color);
+    font-size: 25px;
+}

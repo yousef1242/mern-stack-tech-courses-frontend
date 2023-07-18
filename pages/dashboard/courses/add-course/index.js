@@ -4,11 +4,13 @@ import SidebarDashboard from "@/components/sidebarDashboard/SidebarDashboard";
 import { useEffect, useState } from "react";
 import request from "@/ulits/request";
 import "react-quill/dist/quill.snow.css";
-import ReactQuill from "react-quill";
 import { toast } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { Spinner } from "react-bootstrap";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const AddCourse = () => {
   const router = useRouter();
@@ -158,29 +160,35 @@ const AddCourse = () => {
                     </div>
                     <div className={`form-group mb-5`}>
                       <label htmlFor="Description">Description</label>
-                      <ReactQuill
-                        theme="snow"
-                        value={descriptionValue}
-                        onChange={setDescriptionValue}
-                      />
+                      {typeof window !== "undefined" && (
+                        <ReactQuill
+                          theme="snow"
+                          value={descriptionValue}
+                          onChange={setDescriptionValue}
+                        />
+                      )}
                     </div>
                     <div className={`form-group mb-5`}>
                       <label htmlFor="Requirements">Requirements</label>
-                      <ReactQuill
-                        theme="snow"
-                        value={requirementsValue}
-                        onChange={setRequirementsValue}
-                      />
+                      {typeof window !== "undefined" && (
+                        <ReactQuill
+                          theme="snow"
+                          value={requirementsValue}
+                          onChange={setRequirementsValue}
+                        />
+                      )}
                     </div>
                     <div className={`form-group mb-5`}>
                       <label htmlFor="whatYouWillLearn">
                         What You Will Learn
                       </label>
-                      <ReactQuill
-                        theme="snow"
-                        value={whatYouWillLearnsValue}
-                        onChange={setWhatYouWillLearnsValue}
-                      />
+                      {typeof window !== "undefined" && (
+                        <ReactQuill
+                          theme="snow"
+                          value={whatYouWillLearnsValue}
+                          onChange={setWhatYouWillLearnsValue}
+                        />
+                      )}
                     </div>
                     <div className={`form-group mb-5`}>
                       <label htmlFor="Image">Image</label>

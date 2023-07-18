@@ -6,7 +6,6 @@ import { Provider } from "react-redux";
 import { store } from "@/store";
 import { Toaster } from "react-hot-toast";
 import "react-quill/dist/quill.snow.css";
-import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (

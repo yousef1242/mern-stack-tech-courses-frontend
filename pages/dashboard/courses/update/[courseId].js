@@ -3,11 +3,13 @@ import classes from "../../../../styles/updateCourse.module.css";
 import SidebarDashboard from "@/components/sidebarDashboard/SidebarDashboard";
 import { useEffect, useState } from "react";
 import request from "@/ulits/request";
-import ReactQuill from "react-quill";
 import { toast } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { Spinner } from "react-bootstrap";
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+
+const ReactQuill = dynamic(() => import("react-quill"), { ssr: false });
 
 const UpdateCourse = () => {
   const router = useRouter();

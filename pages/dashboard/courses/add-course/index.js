@@ -3,7 +3,6 @@ import classes from "../../../../styles/addCourse.module.css";
 import SidebarDashboard from "@/components/sidebarDashboard/SidebarDashboard";
 import { useEffect, useState } from "react";
 import request from "@/ulits/request";
-import "react-quill/dist/quill.snow.css";
 import { toast } from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { Spinner } from "react-bootstrap";

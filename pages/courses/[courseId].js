@@ -18,7 +18,6 @@ import { Rating } from "@mui/material";
 import Moment from "react-moment";
 import AddReview from "@/components/addReview/AddReview";
 import PaypalButton from "@/components/paypalButton/PaypalButton";
-import Script from "next/script";
 import AddLesson from "@/components/addLesson/AddLesson";
 
 function MyVerticallyCenteredModal({ show, video, setModalShow }) {

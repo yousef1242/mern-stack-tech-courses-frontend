@@ -45,7 +45,7 @@ const UpdateCourse = () => {
 
     try {
       const { data } = await request.put(
-        `/api/courses/update/${router.query.courseId}`,
+        `/api/courses/update/${router.query.updateCourseId}`,
         {
           instructor: instructor,
           title: title,
@@ -64,7 +64,7 @@ const UpdateCourse = () => {
       );
       toast.success(data.message);
       setLoading(false);
-      // router.push("/dashboard");
+      router.push("/dashboard");
     } catch (error) {
       toast.error(error.response.data.message);
       console.log(error);

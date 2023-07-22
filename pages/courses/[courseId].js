@@ -149,12 +149,14 @@ const SingleCourse = ({ course }) => {
         />
       </Head>
       <div key={course?._id} className={classes.singleCoursePage}>
-        <button
-          onClick={() => setModalShowAddLesson(true)}
-          className={classes.addLessonButton}
-        >
-          Add Lesson
-        </button>
+        {user && user.isAdmin && (
+          <button
+            onClick={() => setModalShowAddLesson(true)}
+            className={classes.addLessonButton}
+          >
+            Add Lesson
+          </button>
+        )}
         <div className={`${classes.header} p-sm-5 p-3`}>
           <Link
             className={classes.headerCategoryLink}

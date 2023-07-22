@@ -63,7 +63,8 @@ const UpdateCourse = () => {
         }
       );
       toast.success(data.message);
-      router.push("/dashboard");
+      setLoading(false);
+      // router.push("/dashboard");
     } catch (error) {
       toast.error(error.response.data.message);
       console.log(error);

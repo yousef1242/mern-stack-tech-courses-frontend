@@ -4,97 +4,97 @@ export function middleware(req) {
   const verify = req.cookies.get("userInfoDataWhenLoginUser");
   const userInfo =
     req.cookies.get("userInfoDataWhenLoginUser") && JSON.parse(verify.value);
-  let url = req.url;
+    const url = req.nextUrl.clone()
 
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/profile/setting")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (!verify && url.pathname.startsWith("/profile/setting")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/profile/my-courses")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (!verify && url.pathname.startsWith("/profile/my-courses")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/profile/favourite")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (!verify && url.pathname.startsWith("/profile/favourite")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
-  }
-
-  if (
-    userInfo?.isAdmin === false &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard")
-  ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
-  }
-
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard/users")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (!verify && url.pathname.startsWith("/dashboard")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/users")
+    url.pathname.startsWith("/dashboard")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (!verify && url.pathname.startsWith("/dashboard/users")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses")
+    url.pathname.startsWith("/dashboard/users")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (!verify && url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (!verify && url.pathname.startsWith("/dashboard/courses")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories")
+    url.pathname.startsWith("/dashboard/courses")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
+  }
+
+  if (!verify && url.pathname.startsWith("/dashboard/categories")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
+  }
+
+  if (
+    userInfo?.isAdmin === false &&
+    url.pathname.startsWith("/dashboard/categories")
+  ) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     !verify &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses/add-course")
+    url.pathname.startsWith("/dashboard/courses/add-course")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/courses/add-course")
+    url.pathname.startsWith("/dashboard/courses/add-course")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     !verify &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories/add-category")
+    url.pathname.startsWith("/dashboard/categories/add-category")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
   if (
     userInfo?.isAdmin === false &&
-    url.includes("https://tech-courses-frontend.vercel.app/dashboard/categories/add-category")
+    url.pathname.startsWith("/dashboard/categories/add-category")
   ) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (verify && url.includes("https://tech-courses-frontend.vercel.app/login")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (verify && url.pathname.startsWith("/login")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 
-  if (verify && url.includes("https://tech-courses-frontend.vercel.app/signup")) {
-    return NextResponse.redirect("https://tech-courses-frontend.vercel.app");
+  if (verify && url.pathname.startsWith("/signup")) {
+    return NextResponse.redirect("https://mern-stack-tech-courses-frontend.vercel.app/");
   }
 }

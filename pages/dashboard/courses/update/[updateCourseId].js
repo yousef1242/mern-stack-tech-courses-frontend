@@ -83,7 +83,7 @@ const UpdateCourse = () => {
   useEffect(() => {
     async function fetchSingleCourseData() {
       const { data } = await request.get(
-        `/api/courses/${router.query.courseId}`
+        `/api/courses/${router.query.updateCourseId}`
       );
       setCourseData(data);
     }

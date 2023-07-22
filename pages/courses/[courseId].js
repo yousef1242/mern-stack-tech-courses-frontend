@@ -438,20 +438,7 @@ const SingleCourse = ({ course }) => {
 
 export default SingleCourse;
 
-export async function getStaticPaths() {
-  const { data } = await request.get("/api/courses");
-  const paths = data.map((d) => {
-    return {
-      params: { courseId: `${d._id}` },
-    };
-  });
-  return {
-    paths: paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { courseId } = context.params;
   const { data } = await request.get(`/api/courses/${courseId}`);
   return { props: { course: data } };

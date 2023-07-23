@@ -87,13 +87,13 @@ const Login = () => {
                     />
                   </div>
                   <div className={classes.formGroup}>
-                    <label htmlFor="Passowrd">Passowrd</label>
+                    <label htmlFor="password">password</label>
                     <input
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       type="password"
-                      id="Passowrd"
-                      placeholder="Passowrd"
+                      id="password"
+                      placeholder="password"
                     />
                   </div>
                   <div className={classes.formGroup}>

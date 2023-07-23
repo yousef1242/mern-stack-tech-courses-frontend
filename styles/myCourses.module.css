@@ -1,5 +1,9 @@
 .divRight{
-    padding: 150px 0 0 0;
+    padding: 150px 0 50px 0;
     height: 100vh;
     background-color: #fff;
+    overflow: scroll;
+}
+.divRight::-webkit-scrollbar{
+    display: none;
 }

@@ -11,6 +11,7 @@ const MyCourses = () => {
   const [userCourses, setUserCourses] = useState([]);
   const [loadingPage, setLoaingPage] = useState(true);
   const { user } = useSelector((state) => state.auth);
+  
   const getUserCourses = async () => {
     if (user !== null) {
       const { data } = await request.get(`/api/users/${user?.id}`);

@@ -16,7 +16,7 @@ const FrontHome = () => {
           <div className="row align-items-center m-0 w-100">
             <div className="col-12 col-lg-6">
               <h1 className={classes.title}>
-                The <span>beggest</span> education platform in the world
+                The <span>biggest</span> education platform in the world
               </h1>
               <Link href={`/courses`} className={classes.tryNow}>
                 Try now
